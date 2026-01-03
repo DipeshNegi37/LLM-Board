@@ -1,0 +1,101 @@
+1. Project Overview
+
+LLM BOARD is a local decision-support system designed to simulate a board of advisors using multiple AI models.
+
+Each model evaluates a question independently, and a final synthesized recommendation is produced.
+The project focuses on decision quality, bias reduction, and analytical thinking, not AI model development.
+
+2. Why This Project Exists
+
+The purpose of this project is to demonstrate:
+
+Structured decision-making
+
+Multi-perspective analysis
+
+Clear documentation
+
+Cost-aware and ethical system design
+
+This project is intended for Data Analysts, Business Analysts, and Project Managers.
+
+3. System Requirements
+
+OS: Windows / macOS / Linux
+
+RAM: Minimum 8 GB
+
+GPU: Not required
+
+Internet: Required only for installation
+
+4. Installing Ollama (Local AI Runtime)
+
+Download Ollama from official website
+
+Install using default settings
+
+Verify installation:
+
+ollama --version
+
+5. Download Required Models
+
+Run the following commands:
+
+ollama pull llama3
+ollama pull mistral
+ollama pull phi
+
+
+These models are free and run locally.
+
+6. Project Setup
+Clone Repository
+git clone https://github.com/<your-username>/llm-board-decision-support.git
+cd llm-board-decision-support
+
+Install Dependencies
+pip install -r requirements.txt
+
+7. Running the System
+python src/run_board.py
+
+
+Enter a business or decision-related question when prompted.
+
+8. Understanding the Output
+
+Each AI model provides an independent perspective
+
+Responses are not influenced by each other
+
+Chairman logic synthesizes insights into a single recommendation
+
+This mirrors real-world decision review meetings.
+
+9. Example Use Cases
+
+Pricing decisions
+
+Risk analysis
+
+Feature prioritization
+
+Process improvement
+
+Strategy discussions
+
+10. Ethical & Cost Considerations
+
+Fully local execution
+
+No data sent externally
+
+Zero API cost
+
+Respect model licenses
+
+11. Conclusion
+
+LLM BOARD demonstrates how structured thinking and system design can improve decision-making without relying on expensive or opaque AI systems.
